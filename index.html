@@ -1,5 +1,3 @@
-index.html
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,40 +7,71 @@ index.html
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
     <div class="question-container">
         <h1>Find Your Perfect GPS Dog Collar</h1>
         <div class="question">
-            <label for="accuracy">How important is pinpoint GPS accuracy to you? (1-10)</label>
-            <input type="range" id="accuracy" min="1" max="10" value="5">
-            <span class="slider-value" id="accuracy-value">5</span>
+            <label for="price">Max Budget for GPS Dog Collar ($100 to $1500):</label>
+            <input type="range" id="price" min="100" max="1500" step="100" value="800">
+            <span class="slider-value" id="price-value">$800</span>
         </div>
         <div class="question">
-            <label for="cost">How important is cost to you? (1-10)</label>
-            <input type="range" id="cost" min="1" max="10" value="5">
-            <span class="slider-value" id="cost-value">5</span>
+            <label for="subscription">Max Monthly Subscription Cost ($5 to $40):</label>
+            <input type="range" id="subscription" min="5" max="40" step="1" value="20">
+            <span class="slider-value" id="subscription-value">$20</span>
+        </div>
+        <div class="question">
+            <label for="geofencing">Importance of Geofencing (1 to 10):</label>
+            <input type="range" id="geofencing" min="1" max="10" value="5">
+            <span class="slider-value" id="geofencing-value">5</span>
+        </div>
+        <div class="question">
+            <label for="battery-life">Required Battery Life (1 day to 90 days):</label>
+            <input type="range" id="battery-life" min="1" max="90" value="45">
+            <span class="slider-value" id="battery-life-value">45 days</span>
+        </div>
+        <div class="question">
+            <label for="water-resistance">Importance of Water Resistance (1 to 10):</label>
+            <input type="range" id="water-resistance" min="1" max="10" value="5">
+            <span class="slider-value" id="water-resistance-value">5</span>
         </div>
     </div>
     <div class="collars-container">
         <h2>Recommended Collars</h2>
         <div class="collar-icons">
-            <div class="collar" id="collar1">
-                <a href="https://link-to-purchase-collar1.com">
-                    <img src="images/collar1.png" alt="Collar 1" class="collar-icon">
-                </a>
+            <!-- Existing icons -->
+          <div class="collar" id="collar1">
+    <img src="images/collar1.png" alt="Collar 1" class="collar-icon">
+    <span class="collar-score" id="score1">Score: 0</span>
+</div>
+<div class="collar" id="collar2">
+    <img src="images/collar2.png" alt="Collar 2" class="collar-icon">
+    <span class="collar-score" id="score2">Score: 0</span>
+</div>
+<div class="collar" id="collar3">
+    <img src="images/collar3.png" alt="Collar 3" class="collar-icon">
+    <span class="collar-score" id="score3">Score: 0</span>
+</div>
+<!-- Continue for all collars -->
+
+            <div class="collar" id="collar4">
+                <img src="images/collar4.png" alt="SpotOn Virtual Fence" class="collar-icon">
+                  <span class="collar-score" id="score4">Score: 0</span>
             </div>
-            <div class="collar" id="collar2">
-                <a href="https://link-to-purchase-collar2.com">
-                    <img src="images/collar2.png" alt="Collar 2" class="collar-icon">
-                </a>
+            <div class="collar" id="collar5">
+                <img src="images/collar5.png" alt="Tractive GPS" class="collar-icon">
+                  <span class="collar-score" id="score5">Score: 0</span>
             </div>
-            <!-- Add more icons as needed -->
-            
+            <div class="collar" id="collar6">
+                <img src="images/collar6.png" alt="Fi Series 2" class="collar-icon">
+                  <span class="collar-score" id="score6">Score: 0</span>
+            </div>
+            <div class="collar" id="collar7">
+                <img src="images/collar7.png" alt="Generic Tracker" class="collar-icon">
+                  <span class="collar-score" id="score7">Score: 0</span>
+            </div>
         </div>
     </div>
-    
     <script src="script.js" defer></script>
 </body>
 </html>
