@@ -1,0 +1,102 @@
+style.css
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.question-container, .collars-container {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.question input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.question input[type="range"]:hover {
+    opacity: 1;
+}
+
+.question input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.question input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider-value {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+}
+
+.collars-container {
+    text-align: center;
+}
+
+.collar {
+    display: inline-block;  /* or 'block' if you want more control */
+    margin: 10px;
+    text-align: center;
+}
+
+.collar a {
+    text-decoration: none;
+    color: #000; /* Default color for the text, adjust as needed */
+}
+
+.collar-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.collar-icon:hover {
+    transform: scale(1.1);
+}

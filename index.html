@@ -1,0 +1,48 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Dog Collar Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="question-container">
+        <h1>Find Your Perfect GPS Dog Collar</h1>
+        <div class="question">
+            <label for="accuracy">How important is pinpoint GPS accuracy to you? (1-10)</label>
+            <input type="range" id="accuracy" min="1" max="10" value="5">
+            <span class="slider-value" id="accuracy-value">5</span>
+        </div>
+        <div class="question">
+            <label for="cost">How important is cost to you? (1-10)</label>
+            <input type="range" id="cost" min="1" max="10" value="5">
+            <span class="slider-value" id="cost-value">5</span>
+        </div>
+    </div>
+    <div class="collars-container">
+        <h2>Recommended Collars</h2>
+        <div class="collar-icons">
+            <div class="collar" id="collar1">
+                <a href="https://link-to-purchase-collar1.com">
+                    <img src="images/collar1.png" alt="Collar 1" class="collar-icon">
+                </a>
+            </div>
+            <div class="collar" id="collar2">
+                <a href="https://link-to-purchase-collar2.com">
+                    <img src="images/collar2.png" alt="Collar 2" class="collar-icon">
+                </a>
+            </div>
+            <!-- Add more icons as needed -->
+            
+        </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
